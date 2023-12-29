@@ -2,10 +2,10 @@ local server = {
 	"lua_ls",
 	"bashls",
 	"pyright",
+	"rust_analyzer",
 }
 
 local config = function()
-	require("neodev").setup({})
 	local mason = require("mason")
 	local mason_lspconfig = require("mason-lspconfig")
 	local lspconfig = require("lspconfig")
@@ -51,7 +51,7 @@ local config = function()
 	mason_lspconfig.setup_handlers({
 		function(server_name)
 			local opts = { capabilities = lsp_capabilities }
-			local require_ok, conf_opts = pcall(require, "lsp.settings." .. server_name)
+			local require_ok, conf_opts = pcall(require, "plugins.lsp.settings." .. server_name)
 			if require_ok then
 				opts = vim.tbl_deep_extend("force", conf_opts, opts)
 			end

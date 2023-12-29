@@ -3,6 +3,7 @@ local list_lint_foramatter = {
 	"isort",
 	"stylua",
 	"flake8",
+	"rustfmt",
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -40,6 +41,7 @@ local config = function()
 			formatting.black.with({ extra_args = { "--fast" } }),
 			formatting.isort,
 			formatting.stylua,
+			formatting.rustfmt,
 			diagnostics.flake8,
 		},
 		on_attach = format_on_save,
