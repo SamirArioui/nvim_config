@@ -27,6 +27,7 @@ vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>", { desc = "Toggle LazyGit" })
 
 -- Windows and buffers
 vim.keymap.set("n", "<leader>c", ":close<CR>", { desc = "Close Window" })
+vim.keymap.set("n", "<leader>bc", ":bdelete<CR>", { desc = "Close Buffer" })
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move To Right Window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move To Bottom Window" })
