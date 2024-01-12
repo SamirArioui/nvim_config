@@ -45,4 +45,4 @@ vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", { desc = "Resize Window Up" })
 vim.keymap.set("n", "<C-Left>", ":vertical resize +2<CR>", { desc = "Resize Window Left" })
 vim.keymap.set("n", "<C-Right>", ":vertical resize -2<CR>", { desc = "Resize Window Right" })
 
-vim.keymap.set("n", "<leader>w", ":w", { desc = "Resize Window Right" })
+vim.keymap.set("n", "<leader>w", ":w", { desc = "Save" })
