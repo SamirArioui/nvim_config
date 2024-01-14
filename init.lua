@@ -1,4 +1,5 @@
 -- related to nvim configuration
+require("core.globals")
 require("core.launch")
 require("core.options")
 require("core.keymaps")
@@ -9,6 +10,7 @@ spec("plugins.devicon")
 spec("plugins.treesitter")
 spec("plugins.lazygit")
 spec("plugins.mason")
+spec("plugins.schemastore")
 spec("plugins.lspconfig")
 
 -- load lazy (put in last of init.lua)
