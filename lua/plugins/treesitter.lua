@@ -1,23 +1,19 @@
 local opts = {
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "python", "bash", "typescript", "javascript", "html", "css" },
+    ensure_installed = { "rust", "c", "lua", "vim", "vimdoc", "query", "python", "bash", "typescript", "javascript", "html", "css" },
     sync_install = false,
+    ignore_install = { "" },
     highlight = { enable = true },
     indent = { enable = true },
-    autotag = { enable = true },
-    auto_install = true,
 }
 
-local config = function()
-    local treesitter = require("nvim-treesitter.configs")
-    treesitter.setup(opts)
-end
-
-return {
+local M = {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = config,
     event = { "BufReadPre", "BufNewFile" },
-    dependencies = {
-        "windwp/nvim-ts-autotag",
-    },
 }
+
+function M.config()
+    require("nvim-treesitter.configs").setup(opts)
+end
+
+return M
