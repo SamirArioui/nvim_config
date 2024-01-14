@@ -1,5 +1,5 @@
 local opts = {
-    ensure_installed = { "rust", "c", "lua", "vim", "vimdoc", "query", "python", "bash", "typescript", "javascript", "html", "css" },
+    ensure_installed = { "markdown", "rust", "c", "lua", "vim", "vimdoc", "query", "python", "bash", "typescript", "javascript", "html", "css" },
     highlight = { enable = true },
     indent = { enable = true },
 }
