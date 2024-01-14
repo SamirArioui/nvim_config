@@ -1,8 +1,9 @@
 local opts = {
     ensure_installed = { "rust", "c", "lua", "vim", "vimdoc", "query", "python", "bash", "typescript", "javascript", "html", "css" },
-    sync_install = false,
-    ignore_install = { "" },
-    highlight = { enable = true },
+    highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+    },
     indent = { enable = true },
 }
 
