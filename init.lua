@@ -27,7 +27,6 @@ spec("plugins.indentline")
 spec("plugins.project")
 spec("plugins.alpha")
 spec("plugins.fidget")
-spec("plugins.toggleterm")
 
 -- load lazy (put in last of init.lua)
 require("plugins.lazy")
