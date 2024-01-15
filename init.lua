@@ -22,6 +22,7 @@ spec("plugins.gitsigns")
 spec("plugins.surround")
 spec("plugins.lualine")
 spec("plugins.autopairs")
+spec("plugins.alpha")
 
 -- load lazy (put in last of init.lua)
 require("plugins.lazy")
