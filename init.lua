@@ -24,6 +24,7 @@ spec("plugins.surround")
 spec("plugins.lualine")
 spec("plugins.autopairs")
 spec("plugins.alpha")
+spec("plugins.fidget")
 
 -- load lazy (put in last of init.lua)
 require("plugins.lazy")
