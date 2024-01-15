@@ -12,6 +12,7 @@ spec("plugins.lazygit")
 spec("plugins.mason")
 spec("plugins.schemastore")
 spec("plugins.lspconfig")
+spec("plugins.none-ls")
 
 -- load lazy (put in last of init.lua)
 require("plugins.lazy")

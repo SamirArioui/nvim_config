@@ -5,3 +5,12 @@ LSP_SERVERS = {
 	"pyright",
 	"rust_analyzer",
 }
+FORMATTERS = {
+	"stylua",
+	"black",
+	"isort",
+	"rustfmt",
+}
+LINTERS = {
+	"flake8",
+}
