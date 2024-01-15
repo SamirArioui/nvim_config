@@ -7,7 +7,7 @@ function M.config()
 	local icons = require("core.icons")
 
 	require("nvim-tree").setup({
-		hijack_netrw = false,
+		hijack_netrw = true,
 		sync_root_with_cwd = true,
 		view = {
 			relativenumber = false,
