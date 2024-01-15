@@ -23,6 +23,7 @@ spec("plugins.gitsigns")
 spec("plugins.surround")
 spec("plugins.lualine")
 spec("plugins.autopairs")
+spec("plugins.indentline")
 spec("plugins.alpha")
 spec("plugins.fidget")
 
