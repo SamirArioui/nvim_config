@@ -1,3 +1,6 @@
+-- disable netrw
+vim.g.loaded_netrwPlugin = 0
+
 -- related to nvim configuration
 require("core.globals")
 require("core.launch")
