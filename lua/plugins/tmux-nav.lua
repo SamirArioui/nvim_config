@@ -1,4 +1,8 @@
-local config = function()
+local M = {
+	"alexghergh/nvim-tmux-navigation",
+}
+
+function M.config()
 	local nvim_tmux_nav = require("nvim-tmux-navigation")
 
 	nvim_tmux_nav.setup({
@@ -13,7 +17,4 @@ local config = function()
 	vim.keymap.set("n", "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
 end
 
-return {
-	"alexghergh/nvim-tmux-navigation",
-	config = config,
-}
+return M

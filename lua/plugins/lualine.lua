@@ -55,10 +55,17 @@ local attached_clients = {
 	},
 }
 
-local opts = {
+local M = {
+	"nvim-lualine/lualine.nvim",
+	depedencies = {
+		"nvim-tree/nvim-web-devicons",
+	},
+}
+
+M.opts = {
 	options = {
 		icons_enabled = true,
-		theme = "darkplus",
+		theme = "auto",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
@@ -77,7 +84,7 @@ local opts = {
 	sections = {
 		lualine_a = { "mode" },
 		lualine_b = { "branch", "diff", "diagnostics" },
-		lualine_c = { "filename" },
+		lualine_c = {},
 		lualine_x = { attached_clients, "filetype" },
 		lualine_y = { "progress" },
 		lualine_z = { "location" },
@@ -94,7 +101,7 @@ local opts = {
 	winbar = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = { "buffers" },
+		lualine_c = { "filename" },
 		lualine_x = {},
 		lualine_y = {},
 		lualine_z = {},
@@ -103,10 +110,4 @@ local opts = {
 	extensions = {},
 }
 
-return {
-	"nvim-lualine/lualine.nvim",
-	depedencies = {
-		"nvim-tree/nvim-web-devicons",
-	},
-	opts = opts,
-}
+return M

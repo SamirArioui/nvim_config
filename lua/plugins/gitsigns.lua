@@ -1,4 +1,9 @@
-local config = function()
+local M = {
+	"lewis6991/gitsigns.nvim",
+	event = { "BufReadPre", "BufNewFile" },
+}
+
+function M.config()
 	require("gitsigns").setup({
 		on_attach = function(bufnr)
 			local gs = package.loaded.gitsigns
@@ -56,8 +61,4 @@ local config = function()
 	})
 end
 
-return {
-	"lewis6991/gitsigns.nvim",
-	event = { "BufReadPre", "BufNewFile" },
-	config = config,
-}
+return M
