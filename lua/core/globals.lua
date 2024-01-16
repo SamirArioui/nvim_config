@@ -9,7 +9,6 @@ FORMATTERS = {
 	"stylua",
 	"black",
 	"isort",
-	"rustfmt",
 }
 LINTERS = {
 	"flake8",
