@@ -45,7 +45,7 @@ function M.config()
 		return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 	end
 
-	local icons = require("user.icons")
+	local icons = require("core.icons")
 
 	cmp.setup({
 		snippet = {
@@ -98,7 +98,6 @@ function M.config()
 			}),
 		}),
 		formatting = {
-            expandable_indicator = true,
 			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
 				vim_item.kind = icons.kind[vim_item.kind]
