@@ -46,3 +46,12 @@ vim.keymap.set("n", "<C-Left>", ":vertical resize +2<CR>", { desc = "Resize Wind
 vim.keymap.set("n", "<C-Right>", ":vertical resize -2<CR>", { desc = "Resize Window Right" })
 
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save" })
+vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
+
+-- Debugger
+vim.keymap.set("n", "<Leader>db", ":DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
+vim.keymap.set("n", "<Leader>dt", ":DapTerminate<CR>", { desc = "Debugger Terminate" })
+vim.keymap.set("n", "<Leader>dv", ":DapStepOver<CR>", { desc = "Debugger Step Over" })
+vim.keymap.set("n", "<Leader>do", ":DapStepOut<CR>", { desc = "Debugger Step Out" })
+vim.keymap.set("n", "<Leader>di", ":DapStepInto<CR>", { desc = "Debugger Step Into" })
+vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>", { desc = "Debugger Continue" })

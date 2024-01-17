@@ -13,3 +13,6 @@ FORMATTERS = {
 LINTERS = {
 	"flake8",
 }
+DEBUGGER = {
+	"codelldb",
+}
