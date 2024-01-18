@@ -30,7 +30,6 @@ spec("plugins.indentline")
 spec("plugins.fidget")
 spec("plugins.project")
 spec("plugins.alpha")
-spec("plugins.dap")
 
 -- load lazy (put in last of init.lua)
 require("plugins.lazy")
