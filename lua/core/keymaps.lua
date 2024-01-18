@@ -12,6 +12,10 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 vim.keymap.set("n", "J", "mzJ`z", { desc = "Join line" })
+vim.keymap.set("n", "cw", "ciw", { desc = "Join line" })
+vim.keymap.set("n", "yw", "yiw", { desc = "Join line" })
+vim.keymap.set("n", "dw", "diw", { desc = "Join line" })
+vim.keymap.set("n", "vw", "viw", { desc = "Join line" })
 
 -- Scrolling
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scolling Down" })
