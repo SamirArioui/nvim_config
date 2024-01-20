@@ -31,3 +31,16 @@ vim.api.nvim_del_keymap("n", "<leader><tab><tab>")
 vim.api.nvim_del_keymap("n", "<leader><tab>]")
 vim.api.nvim_del_keymap("n", "<leader><tab>d")
 vim.api.nvim_del_keymap("n", "<leader><tab>[")
+
+-- improved word with operators
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "cw", "ciw")
+vim.keymap.set("n", "yw", "yiw")
+vim.keymap.set("n", "dw", "diw")
+vim.keymap.set("n", "vw", "viw")
+
+-- Scrolling
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scolling Down" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scolling Up" })
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next Matching" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous Matching" })
