@@ -18,6 +18,12 @@ vim.keymap.set("n", "<leader>kf", "<C-W>v", { desc = "Split window below", remap
 -- Save file
 vim.keymap.set({ "x", "n", "s" }, "<leader>w", "<cmd>w<cr><esc>", { desc = "Save file", remap = true })
 
+-- tmux nav
+vim.keymap.set("n", "<C-h>", "<cmd>NvimTmuxNavigateLeft<cr>")
+vim.keymap.set("n", "<C-j>", "<cmd>NvimTmuxNavigateDown<cr>")
+vim.keymap.set("n", "<C-k>", "<cmd>NvimTmuxNavigateUp<cr>")
+vim.keymap.set("n", "<C-l>", "<cmd>NvimTmuxNavigateRight<cr>")
+
 -- tabs
 vim.api.nvim_del_keymap("n", "<leader><tab>l")
 vim.api.nvim_del_keymap("n", "<leader><tab>f")
