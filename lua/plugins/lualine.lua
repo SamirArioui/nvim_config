@@ -36,6 +36,11 @@ local opts = function()
 					path = 4,
 				},
 			},
+			lualine_z = {
+				function()
+					return " " .. os.date("%R")
+				end,
+			},
 		},
 	}
 end
