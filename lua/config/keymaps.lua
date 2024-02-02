@@ -44,3 +44,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scolling Down" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scolling Up" })
 vim.keymap.set("n", "n", "nzzzv", { desc = "Next Matching" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous Matching" })
+
+-- Telescope tmux
+vim.keymap.set("n", "<leader>ts", "<cmd>Telescope tmux sessions<cr>", { desc = "Tmux Sessions" })
+vim.keymap.set("n", "<leader>tw", "<cmd>Telescope tmux windows<cr>", { desc = "Tmux Windows" })
