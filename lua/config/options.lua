@@ -14,3 +14,4 @@ opt.colorcolumn = "80"
 opt.swapfile = false
 opt.backup = false
 opt.iskeyword:append("-")
+opt.clipboard = "unnamedplus"
