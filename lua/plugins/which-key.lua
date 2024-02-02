@@ -4,6 +4,7 @@ return {
 		defaults = {
 			mode = { "n", "v" },
 			["<leader>k"] = { name = "+windows" },
+			["<leader>t"] = { name = "+tmux" },
 		},
 	},
 }

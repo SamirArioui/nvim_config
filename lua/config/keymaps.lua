@@ -48,3 +48,6 @@ vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous Matching" })
 -- Telescope tmux
 vim.keymap.set("n", "<leader>ts", "<cmd>Telescope tmux sessions<cr>", { desc = "Tmux Sessions" })
 vim.keymap.set("n", "<leader>tw", "<cmd>Telescope tmux windows<cr>", { desc = "Tmux Windows" })
+
+-- Keep paste
+vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste Keep" })
