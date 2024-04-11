@@ -34,10 +34,6 @@ vim.api.nvim_del_keymap("n", "<leader><tab>[")
 
 -- improved word with operators
 vim.keymap.set("n", "J", "mzJ`z")
-vim.keymap.set("n", "cw", "ciw")
-vim.keymap.set("n", "yw", "yiw")
-vim.keymap.set("n", "dw", "diw")
-vim.keymap.set("n", "vw", "viw")
 
 -- Scrolling
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scolling Down" })
