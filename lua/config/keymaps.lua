@@ -18,12 +18,6 @@ vim.keymap.set("n", "<leader>kf", "<C-W>v", { desc = "Split window below", remap
 -- Save file
 vim.keymap.set({ "x", "n", "s" }, "<leader>w", "<cmd>w<cr><esc>", { desc = "Save file", remap = true })
 
--- tmux nav
-vim.keymap.set("n", "<C-h>", "<cmd>NvimTmuxNavigateLeft<cr>")
-vim.keymap.set("n", "<C-j>", "<cmd>NvimTmuxNavigateDown<cr>")
-vim.keymap.set("n", "<C-k>", "<cmd>NvimTmuxNavigateUp<cr>")
-vim.keymap.set("n", "<C-l>", "<cmd>NvimTmuxNavigateRight<cr>")
-
 -- tabs
 vim.api.nvim_del_keymap("n", "<leader><tab>l")
 vim.api.nvim_del_keymap("n", "<leader><tab>f")
@@ -47,3 +41,13 @@ vim.keymap.set("n", "<leader>tw", "<cmd>Telescope tmux windows<cr>", { desc = "T
 
 -- Keep paste
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste Keep" })
+
+-- toogleterm
+vim.keymap.set("n", "<leader>tf", "<cmd>ToggleTerm dir=git_dir direction=float<cr>")
+vim.keymap.set("n", "<leader>tv", "<cmd>ToggleTerm dir=git_dir direction=vertical<cr>")
+vim.keymap.set("n", "<leader>th", "<cmd>ToggleTerm dir=git_dir direction=horizontal<cr>")
+vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], { buffer = 0 })
+vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], { buffer = 0 })
+vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], { buffer = 0 })
+vim.keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], { buffer = 0 })
+vim.keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], { buffer = 0 })
