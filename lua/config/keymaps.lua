@@ -1,8 +1,6 @@
 -- Windows
-vim.keymap.set("n", "<leader>wk", "<C-W>p", { desc = "Other window", remap = true })
-vim.keymap.set("n", "<leader>wd", "<C-W>c", { desc = "Delete window", remap = true })
-vim.keymap.set("n", "<leader>wv", "<C-W>s", { desc = "Split window below", remap = true })
-vim.keymap.set("n", "<leader>wf", "<C-W>v", { desc = "Split window below", remap = true })
+vim.keymap.set("n", "<leader>wh", "<C-W>h", { desc = "Split window right", remap = true })
+vim.keymap.set("n", "<leader>wv", "<C-W>v", { desc = "Split window below", remap = true })
 
 -- Save file
 vim.keymap.set({ "x", "n", "s" }, "<leader>bs", "<cmd>w<cr><esc>", { desc = "Save file", remap = true })
