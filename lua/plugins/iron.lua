@@ -12,7 +12,7 @@ return {
 					python = {
 						-- Can be a table or a function that
 						-- returns a table (see below)
-						command = { "python3" },
+						command = { "ipython" },
 					},
 				},
 				-- How the repl window will be displayed
